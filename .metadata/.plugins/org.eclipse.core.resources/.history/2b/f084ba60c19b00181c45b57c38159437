@@ -1,0 +1,19 @@
+import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class DemoCheckedException {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+try (FileInputStream fi = new FileInputStream("abc.txt");) {
+			
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+	}
+
+}

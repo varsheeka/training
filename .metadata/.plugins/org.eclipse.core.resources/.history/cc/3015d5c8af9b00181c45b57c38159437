@@ -1,0 +1,10 @@
+package com.demo;
+
+public class DemoLambda1 {
+
+	public static void main(String[] args) {
+		
+		MyInterface1 m = (x,y) -> {System.out.println("sum: "+(x+y));};
+		m.add(a, b);
+	}
+}

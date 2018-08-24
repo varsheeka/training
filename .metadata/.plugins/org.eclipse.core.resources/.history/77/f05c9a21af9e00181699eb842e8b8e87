@@ -1,0 +1,16 @@
+import java.util.Set;
+import java.util.TreeSet;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+
+public class Test {
+	public static void main(String[] args) {
+		Set set = new TreeSet();
+		set.add(new Account());
+		set.add(new Account(12,"acc1"));
+		set.add(new Account(13,"acc2"));
+		Iterator it = set.iterator();
+		while (it.hasNext())
+		System.out.print(it.next() .getAcc_id()+ " ");
+	}
+}

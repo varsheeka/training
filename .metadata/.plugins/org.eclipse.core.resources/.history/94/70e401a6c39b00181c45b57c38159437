@@ -1,0 +1,25 @@
+package com.exceptions;
+
+public class MyException extends Exception {
+	private String message;
+	
+	public MyException() {
+		// TODO Auto-generated constructor stub
+		message="lol";
+	}
+
+	
+	
+	public MyException(String message) {
+		super();
+		this.message = message;
+	}
+
+
+
+	public void showCause()
+	{
+		System.out.println("xyz exception");
+	}
+	
+}

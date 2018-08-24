@@ -1,0 +1,59 @@
+import java.util.List;
+
+import com.beans.Book;
+import com.interfaces.BookIO;
+import com.interfaces.BookOperations;
+
+public class DemoArrayListFile implements BookIO, BookOperations {
+
+	public boolean writeDataToFile(List<Book>books)	{
+		return false;
+	}
+	
+	public List<Book> readDataFromFile()	{
+		return null;
+	}
+	
+	@Override
+	public int addBook(Book book) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean deleteBook(Book book) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Book findBookById(Book book) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Book> findBooksByName(String book_name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Book getBook() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void printBook(List<Book> books) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void printBook(Book book) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

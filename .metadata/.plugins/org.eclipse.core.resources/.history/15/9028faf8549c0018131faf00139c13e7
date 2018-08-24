@@ -1,0 +1,9 @@
+
+public class TestMyThread {
+
+	public static void main(String[] args) {
+		Thread t = new MyThread();
+	//	t.run(); // when dealing with threads, NEVER invoke run method.
+		t.start(); // start should be used
+	}
+}

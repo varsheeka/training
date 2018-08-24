@@ -1,0 +1,19 @@
+
+public class DemoJoin {
+
+	public static void main(String[] args) {
+		System.out.println(Thread.currentThread().getName());
+		MyThread t1= new MyThread();
+		t1.setName("High");
+//		t1.setPriority(Thread.MAX_PRIORITY);
+		t1.start();
+		try {
+			t1.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(Thread.currentThread().getName());
+	
+	}
+}

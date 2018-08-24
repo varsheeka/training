@@ -1,0 +1,15 @@
+package com.annotations;
+
+public class TestMyDate {
+
+	@MyDate(date=5,month="Sept",year=1996)
+	public static void display() {
+		System.out.println("hey");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

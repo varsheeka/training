@@ -1,0 +1,18 @@
+import java.util.HashSet;
+import java.util.Set;
+
+import com.beans.Book;
+
+public class DemoHashSet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<Book> books = new HashSet<Book>();
+		
+		books.add(new Book());
+		books.add(new Book(52, "Grey", "House", 350d));
+		books.add(new Book(56, "Darker", "House", 400d));
+		books.add(new Book(52, "Grey", "House", 350d));
+	}
+
+}

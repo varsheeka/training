@@ -1,0 +1,7 @@
+package com.interfaces;
+
+public interface BookOperations {
+
+	public int addBook(Book book);
+	public boolean 
+}

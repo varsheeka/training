@@ -1,0 +1,13 @@
+import java.sql.PreparedStatement;
+
+import com.connections.MyConnection;
+import com.pojos.Employee;
+
+public class EmployeeDAO {
+
+	public int addEmployee(Employee emp)
+	{
+		String INSERT_EMPLOYEE="insert into employee values(?,?,?)";
+		PreparedStatement ps = MyConnection.getMyConnection().prepareStatement(INSERT_EMPLOYEE);
+	}
+}

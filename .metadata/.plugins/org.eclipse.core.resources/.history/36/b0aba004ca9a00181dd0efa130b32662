@@ -1,0 +1,42 @@
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+public class DemoArrayList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List l = new ArrayList();
+		l.add("ABC");
+		l.add("XYZ");
+		l.add("C");
+		l.add("LMN");
+		l.add("C");
+		l.add(new Double(23.45d));
+		l.add(new Object());
+		l.add(new File("data.txt"));
+		
+		l.add(2, "newdata");
+		System.out.println(l);
+		int size=l.size();
+		System.out.println(size);
+		
+		System.out.println(l.contains("123"));
+		
+		System.out.println(l.get(2));
+		Object o = l.get(3);
+		System.out.println(o);
+		o=l.remove(0);
+		System.out.println("removed"+o);
+		
+		boolean remove= l.remove("C");
+		if(remove)
+			System.out.println("removed");
+		else 
+			System.out.println("failed");
+		System.out.println("updated size: "+l.size());
+		
+	}
+
+}

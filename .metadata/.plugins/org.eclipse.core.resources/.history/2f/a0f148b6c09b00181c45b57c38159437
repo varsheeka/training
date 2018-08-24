@@ -1,0 +1,11 @@
+import java.io.FileWriter;
+
+public class DemoCheckedException {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		FileWriter write = new FileWriter("hello.txt");
+	}
+
+}
